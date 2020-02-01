@@ -21,11 +21,11 @@ Running the above command will also install all R packages which are required fo
 
 The function `get_materials_itewr()` is intented as a convenience function for students working with the companion. It downloads up-to-date versions of all supplements to the book such as datasets and R codes from the [GitHub repository](https://github.com/Bakti-Siregar/Econometrics-With-R.git) of the book and saves them to the current working directory (or a location of choice provided to the argument `dir`) according to the following structure:
 
-- `<your_working_directory>/ITEWR/Rmds/` (.Rmd files)
+- `<your_working_directory>/Bakti/Rmds/` (.Rmd files)
 
-- `<your_working_directory>/ITEWR/Data/` (datasets)
+- `<your_working_directory>/Bakti/Data/` (datasets)
 
-- `<your_working_directory>/ITEWR/Rcodes/` (R scripts, numbered by chapter)
+- `<your_working_directory>/Bakti/Rcodes/` (R scripts, numbered by chapter)
 
 Make sure to check your working directory using `getwd()`!
 ___
