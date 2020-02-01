@@ -1,4 +1,4 @@
-<p align="center"><img align="center" src="https://github.com/Bakti-Siregar/Econometrics-With-R/blob/master/images/cover.png" width="30%" height="30%"></p>
+<p align="center"><img align="center" src="https://github.com/Bakti-Siregar/Econometrics-With-R/blob/master/images/cover.png" width="50%" height="50%"></p>
 
 ## 📖 About the book
 
