@@ -2,9 +2,9 @@
 
 ## 📖 About the book
 
-<p><img src="https://github.com/mca91/EconometricsWithR/blob/master/images/logo.png" alt="logo" align="right" width="20%" height="20%"> Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. <i>Introduction to Econometrics with R</i> is an interactive companion to the well-received textbook <i>Introduction to Econometrics</i> by James H. Stock and Mark W. Watson (2015). It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js.</p>
+<p><img src="https://github.com/Bakti-Siregar/Econometrics-With-R/blob/master/images/logo.png" alt="logo" align="right" width="20%" height="20%"> Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. <i>Econometrics with R</i> is an interactive companion to the well-received textbook <i>Introduction to Econometrics</i> by Bakti Siregar, M.Sc (2020). It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js.</p>
 
-The book can be found here: [Introduction to Econometrics with R](https://www.econometrics-with-r.org/)
+The book can be found here: [Econometrics with R](https://github.com/Bakti-Siregar/Econometrics-With-R.git)
 
 ### 📦 How to download materials using the itewrpkg R package
 
@@ -19,7 +19,7 @@ devtools::install_github("mca91/itewrpkg")
 
 Running the above command will also install all R packages which are required for reproducing the code examples presented throughout the book. Running `library(itewrpkg)` will load the package and all dependencies which makes it unnecessary to individually attach the packages introduced at the beginning of each chapter. This may take a few seconds but may be convenient if you are playing around with code chunks from various chapters.
 
-The function `get_materials_itewr()` is intented as a convenience function for students working with the companion. It downloads up-to-date versions of all supplements to the book such as datasets and R codes from the [GitHub repository](https://github.com/mca91/EconometricsWithR) of the book and saves them to the current working directory (or a location of choice provided to the argument `dir`) according to the following structure:
+The function `get_materials_itewr()` is intented as a convenience function for students working with the companion. It downloads up-to-date versions of all supplements to the book such as datasets and R codes from the [GitHub repository](https://github.com/Bakti-Siregar/Econometrics-With-R.git) of the book and saves them to the current working directory (or a location of choice provided to the argument `dir`) according to the following structure:
 
 - `<your_working_directory>/ITEWR/Rmds/` (.Rmd files)
 
