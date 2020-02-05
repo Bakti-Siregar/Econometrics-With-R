@@ -41,9 +41,9 @@ tags: [Tutorial, Models, Econometrics, Causal Analysis, R Programming, Textbook]
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-<center><img src='https://github.com/Bakti-Siregar/images/raw/master/econometric/cover.png' style = 'width:60%;'></center>
+<center><img src='https://github.com/Bakti-Siregar/Econometrics-With-R/raw/master/images/cover.png' style = 'width:60%;'></center>
 
-<br> Lecture of Statistics <img style='float: right; margin: 0px 100px 0px 0px; width:35%' src='https://github.com/Bakti-Siregar/images/raw/master/econometric/logomatana.png'/> <br> Faculty of STEM <br> [Matana University](https://matanauniversity.ac.id/?ly=academic&c=sb) <br> Tangerang, Banten <br> <a href="http://matanauniversity.ac.id/?ly=academic&c=sb">Info: siregarbakti@gmail.com</a> <br><br> `r sf <- lubridate::stamp_date('Last updated on Saturday, Februay 1, 2020'); sf(Sys.Date())`
+<br> Lecture of Statistics <img style='float: right; margin: 0px 100px 0px 0px; width:35%' src='https://github.com/Bakti-Siregar/Econometrics-With-R/raw/master/images/logomatana.png'/> <br> Faculty of STEM <br> [Matana University](https://matanauniversity.ac.id/?ly=academic&c=sb) <br> Tangerang, Banten <br> <a href="http://matanauniversity.ac.id/?ly=academic&c=sb">Info: siregarbakti@gmail.com</a> <br><br> `r sf <- lubridate::stamp_date('Last updated on Saturday, Februay 1, 2020'); sf(Sys.Date())`
 <br>
 <br>
 <iframe src="https://www.facebook.com/siregarbakti" width="400" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" align="left"></iframe>
@@ -55,7 +55,7 @@ cat('<hr style="background-color:#3C6690;height:2px">')
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-Over the recent years, the statistical programming language R has become an integral part of the curricula of econometrics classes we teach at the **Matana University-Indonesia**. We regularly found that a large share of the students, especially in our introductory undergraduate econometrics courses, have not been exposed to any programming language before and thus have difficulties to engage with learning R on their own. With little background in statistics and econometrics, it is natural for beginners to have a hard time understanding the benefits of having R skills for learning and applying econometrics. These particularly include the ability to conduct, document and communicate empirical studies and having the facilities to program simulation studies which is helpful for, e.g., comprehending and validating theorems which usually are not easily grasped by mere brooding over formulas. Being applied economists and econometricians, all of the latter are capabilities we value and wish to share with our students.
+Over the recent years, the statistical programming language R has become an integral part of the curricula of econometrics classes we teach at the **Matana University**. We regularly found that a large share of the students, especially in our introductory undergraduate econometrics courses, have not been exposed to any programming language before and thus have difficulties to engage with learning R on their own. With little background in statistics and econometrics, it is natural for beginners to have a hard time understanding the benefits of having R skills for learning and applying econometrics. These particularly include the ability to conduct, document and communicate empirical studies and having the facilities to program simulation studies which is helpful for, e.g., comprehending and validating theorems which usually are not easily grasped by mere brooding over formulas. Being applied economists and econometricians, all of the latter are capabilities we value and wish to share with our students.
 
 Instead of confronting students with pure coding exercises and complementary classic literature like the book by @venables2010, we figured it would be better to provide interactive learning material that blends R code with the contents of the well-received textbook *Introduction to Econometrics* by @stock2015 which serves as a basis for the lecture. This material is gathered in the present book *Econometrics with R*, an empirical companion to @stock2015. It is an interactive script in the style of a reproducible research report and enables students not only to learn how results of case studies can be replicated with R but also strengthens their ability in using the newly acquired skills in other empirical applications.
 
@@ -115,7 +115,7 @@ Note that some lines in the widget are out-commented which ask you to assign a n
 ## A Very Short Introduction to `r ttcode("R")` and *RStudio*
 
 ```{r, fig.align='center', echo=FALSE, fig.cap="RStudio: the four panes"}
-knitr::include_graphics('https://github.com/Bakti-Siregar/images/raw/master/econometric/rstudio.jpg')
+knitr::include_graphics('https://github.com/Bakti-Siregar/Econometrics-With-R/raw/master/images/rstudio.jpg')
 ```
 
 #### `r ttcode("R")` Basics {-}
