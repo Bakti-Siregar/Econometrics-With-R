@@ -26,7 +26,7 @@ biblio-style: apalike
 biblatexoptions:
   - sortcites
 link-citations: yes
-github-repo: "mca91/EconometricsWithR"
+github-repo: "https://github.com/Bakti-Siregar/Econometrics-With-R"
 description: "Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. 'Econometrics with R' is an interactive companion to the well-received textbook 'Introduction to Econometrics' by Bakti Siregar, M.Sc. It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js."
 url: 'https\://www.econometrics-with-r.org/'
 tags: [Tutorial, Models, Econometrics, Causal Analysis, R Programming, Textbook]
@@ -41,9 +41,9 @@ tags: [Tutorial, Models, Econometrics, Causal Analysis, R Programming, Textbook]
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-<center><img src='images/cover.png' style = 'width:60%;'></center>
+<center><img src='https://github.com/Bakti-Siregar/images/raw/master/econometric/cover.png' style = 'width:60%;'></center>
 
-<br> Lecture of Statistics <img style='float: right; margin: 0px 100px 0px 0px; width:35%' src='images/logomatana.png'/> <br> Faculty of STEM <br> Matana University <br> Tangerang, Banten <br> <a href="http://matanauniversity.ac.id/?ly=academic&c=sb">Info: siregarbakti@gmail.com</a> <br><br> `r sf <- lubridate::stamp_date('Last updated on Saturday, Februay 1, 2020'); sf(Sys.Date())`
+<br> Lecture of Statistics <img style='float: right; margin: 0px 100px 0px 0px; width:35%' src='https://github.com/Bakti-Siregar/images/raw/master/econometric/logomatana.png'/> <br> Faculty of STEM <br> [Matana University](https://matanauniversity.ac.id/?ly=academic&c=sb) <br> Tangerang, Banten <br> <a href="http://matanauniversity.ac.id/?ly=academic&c=sb">Info: siregarbakti@gmail.com</a> <br><br> `r sf <- lubridate::stamp_date('Last updated on Saturday, Februay 1, 2020'); sf(Sys.Date())`
 <br>
 <br>
 <iframe src="https://www.facebook.com/siregarbakti" width="400" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" align="left"></iframe>
@@ -115,7 +115,7 @@ Note that some lines in the widget are out-commented which ask you to assign a n
 ## A Very Short Introduction to `r ttcode("R")` and *RStudio*
 
 ```{r, fig.align='center', echo=FALSE, fig.cap="RStudio: the four panes"}
-knitr::include_graphics('images/rstudio.jpg')
+knitr::include_graphics('https://github.com/Bakti-Siregar/images/raw/master/econometric/rstudio.jpg')
 ```
 
 #### `r ttcode("R")` Basics {-}
