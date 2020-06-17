@@ -35,15 +35,16 @@ tags: [Tutorial, Models, Econometrics, Causal Analysis, R Programming, Textbook]
 # Preface {-}
 
 ```{r, child="_setup.Rmd"}
+library(rddtools)
 ```
 
 ```{r, eval=my_output == "html", results='asis', echo=FALSE}
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-<center><img src='https://github.com/Bakti-Siregar/Econometrics-With-R/raw/master/images/cover.png' style = 'width:60%;'></center>
+<center><img src='images/cover.png' style = 'width:60%;'></center>
 
-<br> Lecture of Statistics <img style='float: right; margin: 0px 100px 0px 0px; width:35%' src='https://github.com/Bakti-Siregar/Econometrics-With-R/raw/master/images/logomatana.png'/> <br> Faculty of STEM <br> [Matana University](https://matanauniversity.ac.id/?ly=academic&c=sb) <br> Tangerang, Banten <br> <a href="http://matanauniversity.ac.id/?ly=academic&c=sb">Info: siregarbakti@gmail.com</a> <br><br> `r sf <- lubridate::stamp_date('Last updated on Saturday, Februay 1, 2020'); sf(Sys.Date())`
+<br> Lecture of Statistics <img style='float: right; margin: 0px 100px 0px 0px; width:35%' src='images/logomatana.png'/> <br> Faculty of STEM <br> [Matana University](https://matanauniversity.ac.id/?ly=academic&c=sb) <br> Tangerang, Banten <br> <a href="http://matanauniversity.ac.id/?ly=academic&c=sb">Info: siregarbakti@gmail.com</a> <br><br> `r sf <- lubridate::stamp_date('Last updated on Saturday, Februay 1, 2020'); sf(Sys.Date())`
 <br>
 <br>
 <iframe src="https://www.facebook.com/siregarbakti" width="400" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" align="left"></iframe>

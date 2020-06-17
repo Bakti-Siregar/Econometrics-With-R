@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>10 Regression with Panel Data | Econometrics with R</title>
   <meta name="description" content="Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. ‘Econometrics with R’ is an interactive companion to the well-received textbook ‘Introduction to Econometrics’ by Bakti Siregar, M.Sc. It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js." />
-  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="10 Regression with Panel Data | Econometrics with R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Bakti Siregar, M.Sc" />
 
 
-<meta name="date" content="2020-02-05" />
+<meta name="date" content="2020-06-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,12 +51,12 @@
 
 
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.1/plotly.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
 <!-- font families -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
@@ -400,8 +400,8 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 <li>fixed effects regression using time and/or entity fixed effects</li>
 <li>computation of standard errors in fixed effects regression models</li>
 </ul>
-<p>Following the book, for applications we make use of the dataset <tt>Fatalities</tt> from the <tt>AER</tt> package <span class="citation">(Kleiber &amp; Zeileis, <a href="#ref-R-AER" role="doc-biblioref">2019</a>)</span> which is a panel dataset reporting annual state level observations on U.S. traffic fatalities for the period 1982 through 1988. The applications analyze if there are effects of alcohol taxes and drunk driving laws on road fatalities and, if present, <em>how strong</em> these effects are.</p>
-<p>We introduce <tt>plm()</tt>, a convenient <tt>R</tt> function that enables us to estimate linear panel regression models which comes with the package <tt>plm</tt> <span class="citation">(Croissant, Millo, &amp; Tappe, <a href="#ref-R-plm" role="doc-biblioref">2019</a>)</span>. Usage of <tt>plm()</tt> is very similar as for the function <tt>lm()</tt> which we have used throughout the previous chapters for estimation of simple and multiple regression models.</p>
+<p>Following the book, for applications we make use of the dataset <tt>Fatalities</tt> from the <tt>AER</tt> package <span class="citation">(Kleiber &amp; Zeileis, <a href="#ref-R-AER" role="doc-biblioref">2020</a>)</span> which is a panel dataset reporting annual state level observations on U.S. traffic fatalities for the period 1982 through 1988. The applications analyze if there are effects of alcohol taxes and drunk driving laws on road fatalities and, if present, <em>how strong</em> these effects are.</p>
+<p>We introduce <tt>plm()</tt>, a convenient <tt>R</tt> function that enables us to estimate linear panel regression models which comes with the package <tt>plm</tt> <span class="citation">(Croissant, Millo, &amp; Tappe, <a href="#ref-R-plm" role="doc-biblioref">2020</a>)</span>. Usage of <tt>plm()</tt> is very similar as for the function <tt>lm()</tt> which we have used throughout the previous chapters for estimation of simple and multiple regression models.</p>
 <p>The following packages and their dependencies are needed for reproduction of the code chunks presented throughout this chapter on your computer:</p>
 <ul>
 <li><tt>AER</tt></li>
@@ -411,15 +411,15 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 <p>Check whether the following code chunk runs without any errors.</p>
 <div class="sourceCode" id="cb445"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb445-1" title="1"><span class="kw">library</span>(AER)</a>
 <a class="sourceLine" id="cb445-2" title="2"><span class="kw">library</span>(plm)</a>
-<a class="sourceLine" id="cb445-3" title="3"><span class="kw">library</span>(stargazer)</a></code></pre></div> 
+<a class="sourceLine" id="cb445-3" title="3"><span class="kw">library</span>(stargazer)</a></code></pre></div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-R-plm">
-<p>Croissant, Y., Millo, G., &amp; Tappe, K. (2019). plm: Linear Models for Panel Data (Version 2.2-0). Retrieved from <a href="https://CRAN.R-project.org/package=plm">https://CRAN.R-project.org/package=plm</a></p>
+<p>Croissant, Y., Millo, G., &amp; Tappe, K. (2020). plm: Linear Models for Panel Data (Version 2.2-3). Retrieved from <a href="https://CRAN.R-project.org/package=plm">https://CRAN.R-project.org/package=plm</a></p>
 </div>
 <div id="ref-R-AER">
-<p>Kleiber, C., &amp; Zeileis, A. (2019). AER: Applied Econometrics with R (Version 1.2-8). Retrieved from <a href="https://CRAN.R-project.org/package=AER">https://CRAN.R-project.org/package=AER</a></p>
+<p>Kleiber, C., &amp; Zeileis, A. (2020). AER: Applied Econometrics with R (Version 1.2-9). Retrieved from <a href="https://CRAN.R-project.org/package=AER">https://CRAN.R-project.org/package=AER</a></p>
 </div>
 </div>
             </section>

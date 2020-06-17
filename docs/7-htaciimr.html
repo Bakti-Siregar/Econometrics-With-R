@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7 Hypothesis Tests and Confidence Intervals in Multiple Regression | Econometrics with R</title>
   <meta name="description" content="Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. ‘Econometrics with R’ is an interactive companion to the well-received textbook ‘Introduction to Econometrics’ by Bakti Siregar, M.Sc. It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js." />
-  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7 Hypothesis Tests and Confidence Intervals in Multiple Regression | Econometrics with R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Bakti Siregar, M.Sc" />
 
 
-<meta name="date" content="2020-02-05" />
+<meta name="date" content="2020-06-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,12 +51,12 @@
 
 
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.1/plotly.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
 <!-- font families -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
@@ -394,9 +394,9 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 <div id="htaciimr" class="section level1">
 <h1><span class="header-section-number">7</span> Hypothesis Tests and Confidence Intervals in Multiple Regression</h1>
 <p>This chapter discusses methods that allow to quantify the sampling uncertainty in the OLS estimator of the coefficients in multiple regression models. The basis for this are hypothesis tests and confidence intervals which, just as for the simple linear regression model, can be computed using basic <tt>R</tt> functions. We will also tackle the issue of testing joint hypotheses on these coefficients.</p>
-<p>Make sure the packages <tt>AER</tt> <span class="citation">(Kleiber &amp; Zeileis, <a href="#ref-R-AER" role="doc-biblioref">2019</a>)</span> and <tt>stargazer</tt> <span class="citation">(Hlavac, <a href="#ref-R-stargazer" role="doc-biblioref">2018</a>)</span> are installed before you go ahead and replicate the examples. The safest way to do so is by checking whether the following code chunk executes without any issues.</p>
+<p>Make sure the packages <tt>AER</tt> <span class="citation">(Kleiber &amp; Zeileis, <a href="#ref-R-AER" role="doc-biblioref">2020</a>)</span> and <tt>stargazer</tt> <span class="citation">(Hlavac, <a href="#ref-R-stargazer" role="doc-biblioref">2018</a>)</span> are installed before you go ahead and replicate the examples. The safest way to do so is by checking whether the following code chunk executes without any issues.</p>
 <div class="sourceCode" id="cb282"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb282-1" title="1"><span class="kw">library</span>(AER)</a>
-<a class="sourceLine" id="cb282-2" title="2"><span class="kw">library</span>(stargazer)</a></code></pre></div> 
+<a class="sourceLine" id="cb282-2" title="2"><span class="kw">library</span>(stargazer)</a></code></pre></div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
@@ -404,7 +404,7 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 <p>Hlavac, M. (2018). stargazer: Well-Formatted Regression and Summary Statistics Tables (Version 5.2.2). Retrieved from <a href="https://CRAN.R-project.org/package=stargazer">https://CRAN.R-project.org/package=stargazer</a></p>
 </div>
 <div id="ref-R-AER">
-<p>Kleiber, C., &amp; Zeileis, A. (2019). AER: Applied Econometrics with R (Version 1.2-8). Retrieved from <a href="https://CRAN.R-project.org/package=AER">https://CRAN.R-project.org/package=AER</a></p>
+<p>Kleiber, C., &amp; Zeileis, A. (2020). AER: Applied Econometrics with R (Version 1.2-9). Retrieved from <a href="https://CRAN.R-project.org/package=AER">https://CRAN.R-project.org/package=AER</a></p>
 </div>
 </div>
             </section>

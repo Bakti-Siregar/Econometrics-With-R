@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Introduction | Econometrics with R</title>
   <meta name="description" content="Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. ‘Econometrics with R’ is an interactive companion to the well-received textbook ‘Introduction to Econometrics’ by Bakti Siregar, M.Sc. It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js." />
-  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Introduction | Econometrics with R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Bakti Siregar, M.Sc" />
 
 
-<meta name="date" content="2020-02-06" />
+<meta name="date" content="2020-06-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -387,7 +387,7 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 <div id="introduction" class="section level1">
 <h1><span class="header-section-number">1</span> Introduction</h1>
 <hr style="background-color:#3C6690;height:2px">
-<p>The interest in the freely available statistical programming language and software environment <tt>R</tt> <span class="citation">(R Core Team, <a href="#ref-R-base" role="doc-biblioref">2019</a>)</span> is soaring. By the time we wrote first drafts for this project, more than 11000 add-ons (many of them providing cutting-edge methods) were made available on the Comprehensive <tt>R</tt> Archive Network (<a href="https://cran.r-project.org/">CRAN</a>), an extensive network of FTP servers around the world that store identical and up-to-date versions of <tt>R</tt> code and its documentation. <tt>R</tt> dominates other (commercial) software for statistical computing in most fields of research in applied statistics. The benefits of it being freely available, open source and having a large and constantly growing community of users that contribute to CRAN render <tt>R</tt> more and more appealing for empirical economists and econometricians alike.</p>
+<p>The interest in the freely available statistical programming language and software environment <tt>R</tt> <span class="citation">(R Core Team, <a href="#ref-R-base" role="doc-biblioref">2020</a>)</span> is soaring. By the time we wrote first drafts for this project, more than 11000 add-ons (many of them providing cutting-edge methods) were made available on the Comprehensive <tt>R</tt> Archive Network (<a href="https://cran.r-project.org/">CRAN</a>), an extensive network of FTP servers around the world that store identical and up-to-date versions of <tt>R</tt> code and its documentation. <tt>R</tt> dominates other (commercial) software for statistical computing in most fields of research in applied statistics. The benefits of it being freely available, open source and having a large and constantly growing community of users that contribute to CRAN render <tt>R</tt> more and more appealing for empirical economists and econometricians alike.</p>
 <p>A striking advantage of using <tt>R</tt> in econometrics is that it enables students to explicitly document their analysis step-by-step such that it is easy to update and to expand. This allows to re-use code for similar applications with different data. Furthermore, <tt>R</tt> programs are fully reproducible, which makes it straightforward for others to comprehend and validate results.</p>
 <p>Over the recent years, <tt>R</tt> has thus become an integral part of the curricula of econometrics classes we teach at the University of Duisburg-Essen. In some sense, learning to code is comparable to learning a foreign language and continuous practice is essential for the learning success. Needless to say, presenting bare <tt>R</tt> code on slides does not encourage the students to engage with hands-on experience on their own. This is why <tt>R</tt> is crucial. As for accompanying literature, there are some excellent books that deal with <tt>R</tt> and its applications to econometrics, e.g., <span class="citation">Kleiber &amp; Zeileis (<a href="#ref-kleiber2008" role="doc-biblioref">2008</a>)</span>. However, such sources may be somewhat beyond the scope of undergraduate students in economics having little understanding of econometric methods and barely any experience in programming at all. Consequently, we started to compile a collection of reproducible reports for use in class. These reports provide guidance on how to implement selected applications from the textbook <em>Introduction to Econometrics</em> <span class="citation">(Stock &amp; Watson, <a href="#ref-stock2015" role="doc-biblioref">2015</a>)</span> which serves as a basis for the lecture and the accompanying tutorials. This process was facilitated considerably by <tt>knitr</tt> <span class="citation">(Xie, <a href="#ref-R-knitr" role="doc-biblioref">2020</a><a href="#ref-R-knitr" role="doc-biblioref">b</a>)</span> and <tt>R markdown</tt> <span class="citation">(Allaire et al., <a href="#ref-R-rmarkdown" role="doc-biblioref">2020</a>)</span>. In conjunction, both <tt>R</tt> packages provide powerful functionalities for dynamic report generation which allow to seamlessly combine pure text, LaTeX, <tt>R</tt> code and its output in a variety of formats, including PDF and HTML. Moreover, writing and distributing reproducible reports for use in academia has been enriched tremendously by the <tt>bookdown</tt> package <span class="citation">(Xie, <a href="#ref-R-bookdown" role="doc-biblioref">2020</a><a href="#ref-R-bookdown" role="doc-biblioref">a</a>)</span> which has become our main tool for this project. <tt>bookdown</tt> builds on top of <tt>R markdown</tt> and allows to create appealing HTML pages like this one, among other things.
 Being inspired by <em>Using R for Introductory Econometrics</em> <span class="citation">(Heiss, <a href="#ref-heiss2016" role="doc-biblioref">2016</a>)</span><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and with this powerful toolkit at hand we wrote up our own empirical companion to <span class="citation">Stock &amp; Watson (<a href="#ref-stock2015" role="doc-biblioref">2015</a>)</span>. The result, which you started to look at, is <em>Econometrics with R</em>.</p>
@@ -399,14 +399,14 @@ Being inspired by <em>Using R for Introductory Econometrics</em> <span class="ci
 <p>As an example, consider the following line of code presented in chunk below. It tells <tt>R</tt> to compute the number of packages available on <tt>CRAN</tt>. The code chunk is followed by the output produced.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># check the number of R packages available on CRAN</span></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="kw">nrow</span>(<span class="kw">available.packages</span>(<span class="dt">repos =</span> <span class="st">&quot;http://cran.us.r-project.org&quot;</span>))</a></code></pre></div>
-<pre><code>## [1] 15306</code></pre>
+<pre><code>## [1] 15765</code></pre>
 <p>Each code chunk is equipped with a button on the outer right hand side which copies the code to your clipboard. This makes it convenient to work with larger code segments in your version of <tt>R</tt>/<em>RStudio</em> or in the widgets presented throughout the book. In the widget above, you may click on <tt>R Console</tt> and type <code>nrow(available.packages(repos = "http://cran.us.r-project.org"))</code> (the command from the code chunk above) and execute it by hitting <em>Enter</em> on your keyboard.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-<p>Note that some lines in the widget are out-commented which ask you to assign a numeric value to a variable and then to print the variable’s content to the console. You may enter your solution approach to <tt>script.R</tt> and hit the button <em>Run</em> in order to get the feedback described further above. In case you do not know how to solve this sample exercise (don’t panic, that is probably why you are reading this), a click on <em>Hint</em> will provide you with some advice. If you still can’t find a solution, a click on <em>Solution</em> will provide you with another tab, <tt>Solution.R</tt> which contains sample solution code. It will often be the case that exercises can be solved in many different ways and <tt>Solution.R</tt> presents what we consider as comprehensible and idiomatic.</p> 
+<p>Note that some lines in the widget are out-commented which ask you to assign a numeric value to a variable and then to print the variable’s content to the console. You may enter your solution approach to <tt>script.R</tt> and hit the button <em>Run</em> in order to get the feedback described further above. In case you do not know how to solve this sample exercise (don’t panic, that is probably why you are reading this), a click on <em>Hint</em> will provide you with some advice. If you still can’t find a solution, a click on <em>Solution</em> will provide you with another tab, <tt>Solution.R</tt> which contains sample solution code. It will often be the case that exercises can be solved in many different ways and <tt>Solution.R</tt> presents what we consider as comprehensible and idiomatic.</p>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-R-rmarkdown">
-<p>Allaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A., … Iannone, R. (2020). rmarkdown: Dynamic Documents for R (Version 2.1). Retrieved from <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a></p>
+<p>Allaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A., … Iannone, R. (2020). rmarkdown: Dynamic Documents for R (Version 2.2). Retrieved from <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a></p>
 </div>
 <div id="ref-heiss2016">
 <p>Heiss, F. (2016). <em>Using R for Introductory Econometrics</em>. CreateSpace Independent Publishing Platform. Retrieved from <a href="http://www.urfie.net/">http://www.urfie.net/</a></p>
@@ -415,16 +415,16 @@ Being inspired by <em>Using R for Introductory Econometrics</em> <span class="ci
 <p>Kleiber, C., &amp; Zeileis, A. (2008). <em>Applied Econometrics with R</em>. Springer.</p>
 </div>
 <div id="ref-R-base">
-<p>R Core Team. (2019). <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from <a href="https://www.R-project.org/">https://www.R-project.org/</a></p>
+<p>R Core Team. (2020). <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from <a href="https://www.R-project.org/">https://www.R-project.org/</a></p>
 </div>
 <div id="ref-stock2015">
 <p>Stock, J. H., &amp; Watson, M. W. (2015). <em>Introduction to Econometrics, Third Update, Global Edition</em>. Pearson Education Limited.</p>
 </div>
 <div id="ref-R-bookdown">
-<p>Xie, Y. (2020a). bookdown: Authoring Books and Technical Documents with R Markdown (Version 0.17). Retrieved from <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a></p>
+<p>Xie, Y. (2020a). bookdown: Authoring Books and Technical Documents with R Markdown (Version 0.19). Retrieved from <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a></p>
 </div>
 <div id="ref-R-knitr">
-<p>Xie, Y. (2020b). knitr: A General-Purpose Package for Dynamic Report Generation in R (Version 1.27). Retrieved from <a href="https://CRAN.R-project.org/package=knitr">https://CRAN.R-project.org/package=knitr</a></p>
+<p>Xie, Y. (2020b). knitr: A General-Purpose Package for Dynamic Report Generation in R (Version 1.28). Retrieved from <a href="https://CRAN.R-project.org/package=knitr">https://CRAN.R-project.org/package=knitr</a></p>
 </div>
 </div>
 <div class="footnotes">

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3.6 An Application to the Gender Gap of Earnings | Econometrics with R</title>
   <meta name="description" content="Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. ‘Econometrics with R’ is an interactive companion to the well-received textbook ‘Introduction to Econometrics’ by Bakti Siregar, M.Sc. It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js." />
-  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3.6 An Application to the Gender Gap of Earnings | Econometrics with R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Bakti Siregar, M.Sc" />
 
 
-<meta name="date" content="2020-02-05" />
+<meta name="date" content="2020-06-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,12 +51,12 @@
 
 
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.1/plotly.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
 <!-- font families -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
@@ -401,7 +401,7 @@ There are several ways to import the <tt>.xlsx</tt>-files into <tt>R</tt>. Our s
 <p>You are now ready to import the dataset. Make sure you use the correct path to import the downloaded file! In our example, the file is saved in a subfolder of the working directory named <tt>data</tt>. If you are not sure what your current working directory is, use <tt>getwd()</tt>, see also <tt>?getwd</tt>. This will give you the path that points to the place <tt>R</tt> is currently looking for files to work with.</p>
 <div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb131-1" title="1"><span class="co"># import the data into R</span></a>
 <a class="sourceLine" id="cb131-2" title="2">cps &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="dt">path =</span> <span class="st">&#39;data/cps_ch3.xlsx&#39;</span>)</a></code></pre></div>
-<p>Next, install and load the package <tt>dyplr</tt> <span class="citation">(Wickham et al., <a href="#ref-R-dplyr" role="doc-biblioref">2019</a>)</span>. This package provides some handy functions that simplify data wrangling a lot. It makes use of the <tt>%&gt;%</tt> operator.</p>
+<p>Next, install and load the package <tt>dyplr</tt> <span class="citation">(Wickham et al., <a href="#ref-R-dplyr" role="doc-biblioref">2020</a>)</span>. This package provides some handy functions that simplify data wrangling a lot. It makes use of the <tt>%&gt;%</tt> operator.</p>
 <div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb132-1" title="1"><span class="co"># load the &#39;dplyr&#39; package</span></a>
 <a class="sourceLine" id="cb132-2" title="2"><span class="kw">library</span>(dplyr)</a></code></pre></div>
 <p>First, get an overview over the dataset. Next, use <tt>%&gt;%</tt> and some functions from the <tt>dplyr</tt> package to group the observations by gender and year and compute descriptive statistics for both groups.</p>
@@ -481,7 +481,7 @@ There are several ways to import the <tt>.xlsx</tt>-files into <tt>R</tt>. Our s
 <p>Wickham, H., &amp; Bryan, J. (2019). readxl: Read Excel Files (Version 1.3.1). Retrieved from <a href="https://CRAN.R-project.org/package=readxl">https://CRAN.R-project.org/package=readxl</a></p>
 </div>
 <div id="ref-R-dplyr">
-<p>Wickham, H., François, R., Henry, L., &amp; Müller, K. (2019). dplyr: A Grammar of Data Manipulation (Version 0.8.3). Retrieved from <a href="https://CRAN.R-project.org/package=dplyr">https://CRAN.R-project.org/package=dplyr</a></p>
+<p>Wickham, H., François, R., Henry, L., &amp; Müller, K. (2020). dplyr: A Grammar of Data Manipulation (Version 1.0.0). Retrieved from <a href="https://CRAN.R-project.org/package=dplyr">https://CRAN.R-project.org/package=dplyr</a></p>
 </div>
 </div>
             </section>

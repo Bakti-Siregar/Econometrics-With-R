@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>15 Estimation of Dynamic Causal Effects | Econometrics with R</title>
   <meta name="description" content="Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. ‘Econometrics with R’ is an interactive companion to the well-received textbook ‘Introduction to Econometrics’ by Bakti Siregar, M.Sc. It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js." />
-  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="15 Estimation of Dynamic Causal Effects | Econometrics with R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Bakti Siregar, M.Sc" />
 
 
-<meta name="date" content="2020-02-05" />
+<meta name="date" content="2020-06-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,12 +51,12 @@
 
 
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.1/plotly.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
 <!-- font families -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
@@ -402,11 +402,11 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 </ul>
 <p>To reproduce code examples, install the <tt>R</tt> packages listed below beforehand and make sure that the subsequent code chunk executes without any errors.</p>
 <ul>
-<li><tt>AER</tt> <span class="citation">(Kleiber &amp; Zeileis, <a href="#ref-R-AER" role="doc-biblioref">2019</a>)</span></li>
+<li><tt>AER</tt> <span class="citation">(Kleiber &amp; Zeileis, <a href="#ref-R-AER" role="doc-biblioref">2020</a>)</span></li>
 <li><tt>dynlm</tt> <span class="citation">(Zeileis, <a href="#ref-R-dynlm" role="doc-biblioref">2019</a>)</span></li>
-<li><tt>nlme</tt> <span class="citation">(Pinheiro, Bates, &amp; R-core, <a href="#ref-R-nlme" role="doc-biblioref">2019</a>)</span></li>
+<li><tt>nlme</tt> <span class="citation">(Pinheiro, Bates, &amp; R-core, <a href="#ref-R-nlme" role="doc-biblioref">2020</a>)</span></li>
 <li><tt>orcutt</tt> <span class="citation">(Spada, <a href="#ref-R-orcutt" role="doc-biblioref">2018</a>)</span></li>
-<li><tt>quantmod</tt> <span class="citation">(Ryan &amp; Ulrich, <a href="#ref-R-quantmod" role="doc-biblioref">2019</a>)</span></li>
+<li><tt>quantmod</tt> <span class="citation">(Ryan &amp; Ulrich, <a href="#ref-R-quantmod" role="doc-biblioref">2020</a>)</span></li>
 <li><tt>stargazer</tt> <span class="citation">(Hlavac, <a href="#ref-R-stargazer" role="doc-biblioref">2018</a>)</span></li>
 </ul>
 <div class="sourceCode" id="cb801"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb801-1" title="1"><span class="kw">library</span>(AER)</a>
@@ -414,7 +414,7 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 <a class="sourceLine" id="cb801-3" title="3"><span class="kw">library</span>(dynlm)</a>
 <a class="sourceLine" id="cb801-4" title="4"><span class="kw">library</span>(orcutt)</a>
 <a class="sourceLine" id="cb801-5" title="5"><span class="kw">library</span>(nlme)</a>
-<a class="sourceLine" id="cb801-6" title="6"><span class="kw">library</span>(stargazer)</a></code></pre></div> 
+<a class="sourceLine" id="cb801-6" title="6"><span class="kw">library</span>(stargazer)</a></code></pre></div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
@@ -422,13 +422,13 @@ This book is in <b>Open Review</b>. We want your feedback to make the book bette
 <p>Hlavac, M. (2018). stargazer: Well-Formatted Regression and Summary Statistics Tables (Version 5.2.2). Retrieved from <a href="https://CRAN.R-project.org/package=stargazer">https://CRAN.R-project.org/package=stargazer</a></p>
 </div>
 <div id="ref-R-AER">
-<p>Kleiber, C., &amp; Zeileis, A. (2019). AER: Applied Econometrics with R (Version 1.2-8). Retrieved from <a href="https://CRAN.R-project.org/package=AER">https://CRAN.R-project.org/package=AER</a></p>
+<p>Kleiber, C., &amp; Zeileis, A. (2020). AER: Applied Econometrics with R (Version 1.2-9). Retrieved from <a href="https://CRAN.R-project.org/package=AER">https://CRAN.R-project.org/package=AER</a></p>
 </div>
 <div id="ref-R-nlme">
-<p>Pinheiro, J., Bates, D., &amp; R-core. (2019). nlme: Linear and Nonlinear Mixed Effects Models (Version 3.1-143). Retrieved from <a href="https://CRAN.R-project.org/package=nlme">https://CRAN.R-project.org/package=nlme</a></p>
+<p>Pinheiro, J., Bates, D., &amp; R-core. (2020). nlme: Linear and Nonlinear Mixed Effects Models (Version 3.1-147). Retrieved from <a href="https://CRAN.R-project.org/package=nlme">https://CRAN.R-project.org/package=nlme</a></p>
 </div>
 <div id="ref-R-quantmod">
-<p>Ryan, J. A., &amp; Ulrich, J. M. (2019). quantmod: Quantitative Financial Modelling Framework (Version 0.4-15). Retrieved from <a href="https://CRAN.R-project.org/package=quantmod">https://CRAN.R-project.org/package=quantmod</a></p>
+<p>Ryan, J. A., &amp; Ulrich, J. M. (2020). quantmod: Quantitative Financial Modelling Framework (Version 0.4.17). Retrieved from <a href="https://CRAN.R-project.org/package=quantmod">https://CRAN.R-project.org/package=quantmod</a></p>
 </div>
 <div id="ref-R-orcutt">
 <p>Spada, S. (2018). orcutt: Estimate Procedure in Case of First Order Autocorrelation (Version 2.3). Retrieved from <a href="https://CRAN.R-project.org/package=orcutt">https://CRAN.R-project.org/package=orcutt</a></p>
